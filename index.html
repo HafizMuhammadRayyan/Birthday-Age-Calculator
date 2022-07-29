@@ -1,0 +1,45 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Birthday & Age Calculator</title>
+</head>
+
+<body>
+
+
+    <fieldset>
+        <legend>Birthday Calculator</legend>
+        <form onsubmit="ageCalculate(); return false">
+            <input type="date" id="dateOfBirth">
+            <input type="submit">
+        </form>
+    </fieldset>
+
+
+    <!-- How old are you -->
+    <div class="yourage">
+        <h1 id="ageHeading">Your age</h1>
+
+        <h2 class="line" id="age_day">00</h2>
+        <small>Days</small>
+
+        <h2 class="line" id="age_hour">00</h2>
+        <small>Hours</small>
+
+        <h2 class="line" id="age_min">00</h2>
+        <small>Min</small>
+
+        <h2 class="line" id="age_sec">00</h2>
+        <small>Sec</small>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
